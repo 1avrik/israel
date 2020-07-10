@@ -1,0 +1,17 @@
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin button {
+  border: none;
+  font-size: 12px;
+  background-color: $accent-main;
+  color: white;
+  letter-spacing: 2px;
+
+  &:hover {
+    background-color: $accent-hover;
+  }
+}

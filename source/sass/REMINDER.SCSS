@@ -1,0 +1,14 @@
+.list {
+  color: red;
+  @include list-reset; // пример использования миксинов
+
+  .item { // пример использования вложенности классов
+    color: green;
+    font-size: 25px;
+
+    &:first-child { // пример использования псевдоклассов
+      color: black;
+      font-size: 40px;
+    }
+  }
+}
