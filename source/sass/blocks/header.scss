@@ -48,6 +48,7 @@
     height: 13px;
     background-image: url('../img/icon-menu-cross.svg');
     background-position: 50% 50%;
+    position: fixed;
   }
 }
 
@@ -64,6 +65,10 @@
 .header__navigation-link {
   color: white;
   font-size: 16px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .header__text-wrapper {
@@ -118,6 +123,7 @@
 
   .header {
     min-height: 500px;
+    position: relative;
   }
 
   .header__navigation {
@@ -132,6 +138,7 @@
 
     &--open {
       color: #011C40;
+      position: fixed;
     }
   }
 
@@ -140,13 +147,8 @@
     z-index: 1;
   }
 
-  .header__navigation {
-    position: relative;
-  }
-
   .header__navigation-list {
     display: none;
-    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -155,6 +157,7 @@
 
     &--open {
       display: block;
+      position: fixed;
     }
   }
 
@@ -171,6 +174,7 @@
 
   .header__text-wrapper {
     margin-top: 143px;
+    padding-bottom: 185px;
   }
 
   .header__text-title {
@@ -181,5 +185,25 @@
   .header__text-subtitle {
     font-size: 16px;
     line-height: 140%;
+  }
+
+  .header__navigation--nojs {
+    margin-bottom: 395px;
+
+    & .header__navigation-logo-img {
+      z-index: 1;
+      color: #011C40;
+    }
+
+    & .header__navigation-list {
+      display: block;
+      position: absolute;
+      left: 0;
+    }
+
+    & .header__navigation-toggle {
+      display: none;
+    }
+
   }
 }
