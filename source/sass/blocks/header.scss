@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  @include padding;
 }
 
 .header-wrapper {
@@ -73,6 +72,7 @@
 
 .header__text-wrapper {
   margin-top: 210px;
+  margin-left: 95px;
 }
 
 .header__text-title {
