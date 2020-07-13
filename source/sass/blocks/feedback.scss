@@ -1,0 +1,152 @@
+.feedback {
+  background-image: url('../img/background-feedback.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.feedback__wrapper {
+  @include container;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedback__text-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  color: #011C40;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.feedback__text-intro {
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
+  margin: 0;
+}
+
+.feedback__form {
+  width: 403px;
+  padding: 50px;
+  background: #011C40;
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  margin-right: 45px;
+}
+
+.feedback__form-text {
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.feedback__form-list {
+  @include list-reset;
+}
+
+.feedback__form-item {
+  margin: 0;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--checkbox {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.feedback__form-input {
+  padding: 15px 0 15px 15px;
+  width: 100%;
+  font-size: 14px;
+  color: #011C40;
+
+  &::placeholder {
+    font-size: 14px;
+    color: #011C40;
+    opacity: 1;
+  }
+}
+
+.feedback__form-checkbox {
+  width: 18px;
+  height: 18px;
+  padding: 6px 4px;
+  margin-right: 8px;
+}
+
+.feedback__form-checkbox-label {
+  font-size: 11px;
+  color: #F9FBFD;
+}
+
+.feedback__form-button {
+  width: 100%;
+  font-size: 14px;
+  color: #011C40;
+  padding: 15px 0 17px 0;
+  background-color: #F9FBFD;
+  border: none;
+  margin-top: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $max-tablet) {
+
+  .feedback__wrapper {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .feedback__text-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .feedback__text-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .feedback__text-intro {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .feedback__form {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $max-mobile) {
+
+  .feedback__wrapper {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .feedback__form {
+    width: 290px;
+    padding: 40px 30px;
+  }
+
+  .feedback__form-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
