@@ -1,5 +1,5 @@
 .feedback {
-  background-image: url('../img/background-feedback.jpg');
+  background-image: url("../img/background-feedback.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -18,7 +18,7 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -26,22 +26,22 @@
 .feedback__text-intro {
   font-size: 18px;
   line-height: 150%;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
 }
 
 .feedback__form {
   width: 403px;
   padding: 50px;
-  background: #011C40;
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  background: #011c40;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   margin-right: 45px;
 }
 
 .feedback__form-text {
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   margin-top: 0;
   margin-bottom: 35px;
 }
@@ -68,11 +68,11 @@
   padding: 15px 0 15px 15px;
   width: 100%;
   font-size: 14px;
-  color: #011C40;
+  color: #011c40;
 
   &::placeholder {
     font-size: 14px;
-    color: #011C40;
+    color: #011c40;
     opacity: 1;
   }
 }
@@ -86,15 +86,15 @@
 
 .feedback__form-checkbox-label {
   font-size: 11px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .feedback__form-button {
   width: 100%;
   font-size: 14px;
-  color: #011C40;
+  color: #011c40;
   padding: 15px 0 17px 0;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   border: none;
   margin-top: 10px;
 
@@ -104,7 +104,6 @@
 }
 
 @media (max-width: $max-tablet) {
-
   .feedback__wrapper {
     flex-direction: column;
     padding-top: 100px;
@@ -133,7 +132,6 @@
 }
 
 @media (max-width: $max-mobile) {
-
   .feedback__wrapper {
     padding-top: 65px;
     padding-bottom: 65px;

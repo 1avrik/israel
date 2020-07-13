@@ -1,5 +1,5 @@
 .features {
-  background-image: url('../img/features-background.jpg');
+  background-image: url("../img/features-background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -54,7 +54,6 @@
 }
 
 @media (max-width: $max-tablet) {
-
   .features__wrapper {
     padding-top: 100px;
     padding-bottom: 100px;
