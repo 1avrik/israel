@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Круизы в Антарктику</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script src="js/picturefill.min.js" async=""></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
 </head>
 <body class="body">
   <header class="header">
@@ -18,16 +23,16 @@
         <span class="visually-hidden">Лого Круизы в Антаркстику</span></a>
       <ul class="header__navigation-list">
         <li class="header__navigation-item">
-          <a class="header__navigation-link" href="">Преимущества</a>
+          <a class="header__navigation-link" href="#">Преимущества</a>
         </li>
         <li class="header__navigation-item">
-          <a class="header__navigation-link" href="">Направления</a>
+          <a class="header__navigation-link" href="#">Направления</a>
         </li>
         <li class="header__navigation-item">
-          <a class="header__navigation-link" href="">Ближайшие круизы</a>
+          <a class="header__navigation-link" href="#">Ближайшие круизы</a>
         </li>
         <li class="header__navigation-item">
-          <a class="header__navigation-link" href="">Контакты</a>
+          <a class="header__navigation-link" href="#">Контакты</a>
         </li>
       </ul>
       <button class="header__navigation-toggle" type="button">
@@ -58,21 +63,21 @@
     <h2 class="features__title">Преимущества</h2>
     <ul class="features__list">
       <li class="features__item">
-        <svg class="features__item-img" width="27" heigth="32">
+        <svg class="features__item-img" width="27" height="32">
           <use xlink:href="img/sprite_auto.svg#icon-features-1"></use>
         </svg>
         <h3 class="features__item-title">Небольшой круизный лайнер</h3>
         <p class="features__item-text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
       </li>
       <li class="features__item">
-        <svg class="features__item-img" width="38" heigth="21">
+        <svg class="features__item-img" width="38" height="21">
           <use xlink:href="img/sprite_auto.svg#icon-features-2"></use>
         </svg>
         <h3 class="features__item-title">Система все включено</h3>
         <p class="features__item-text">Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
       </li>
       <li class="features__item">
-        <svg class="features__item-img" width="42" heigth="15">
+        <svg class="features__item-img" width="42" height="15">
           <use xlink:href="img/sprite_auto.svg#icon-features-3"></use>
         </svg>
         <h3 class="features__item-title">Экскурсионные туры на Zodiac</h3>
@@ -243,29 +248,37 @@
       <p class="feedback__form-text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
       <ul class="feedback__form-list">
         <li class="feedback__form-item">
-          <label class="visually-hidden">Ваше имя</label>
-          <input class="feedback__form-input" type="text" name="name" placeholder="Валерия">
+          <label class="visually-hidden" for="name">Ваше имя</label>
+          <input class="feedback__form-input" id="name" type="text" name="name" placeholder="Валерия">
         </li>
         <li class="feedback__form-item">
-          <label class="visually-hidden">Номер телефона</label>
-          <input class="feedback__form-input" type="text" name="phone" placeholder="89236889975">
+          <label class="visually-hidden" for="phone">Номер телефона</label>
+          <input class="feedback__form-input" id="phone" type="text" name="phone" placeholder="89236889975">
         </li>
         <li class="feedback__form-item">
-          <label class="visually-hidden">Email</label>
-          <input class="feedback__form-input" type="email" name="email" placeholder="grishaewa.lera@gmail.com">
+          <label class="visually-hidden" for="email">Email</label>
+          <input class="feedback__form-input" id="email" type="email" name="email" placeholder="grishaewa.lera@gmail.com">
         </li>
         <li class="feedback__form-item feedback__form-item--checkbox">
-          <input class="feedback__form-checkbox" type="checkbox" name="checkbox" checked="checked">
-          <label class="feedback__form-checkbox-label">Я согласен на обработку моих персональных данных</label>
+          <input class="feedback__form-checkbox" id="checkbox" type="checkbox" name="checkbox" checked="checked">
+          <label class="feedback__form-checkbox-label" for="checkbox">Я согласен на обработку моих персональных данных</label>
         </li>
         <li class="feedback__form-item">
-          <button class="feedback__form-button" type="sibmit">Оставить заявку</button>
+          <button class="feedback__form-button" type="submit">Оставить заявку</button>
         </li>
     </ul></form>
   </div>
 </section>
 
-    <h2>contacts</h2>
+    <section class="contacts">
+  <h2 class="visually-hidden">Контакты</h2>
+  <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f935fa6cafe0f6e22bddd33d5d9cb9a472a170e3b19dbe8f15f62bca29adb66&amp;source=constructor"></iframe>
+  <div class="contacts__text-wrapper">
+    <p class="contacts__text-title">У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+    <p class="contacts__text-intro contacts__text-intro--adress">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+    <a class="contacts__text-intro contacts__text-intro--phone" href="tel:88002000000">8-800-200-00-00</a>
+  </div>
+</section>
 
   </main>
   <footer class="footer">
@@ -316,6 +329,6 @@
   </div>
 </footer>
 
-  <script src="js/navigationMenu.js" type="text/javascript"></script>
+  <script src="js/navigationMenu.js"></script>
 </body>
 </html>

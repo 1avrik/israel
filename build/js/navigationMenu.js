@@ -13,8 +13,8 @@
     menuButton.classList.toggle('header__navigation-toggle--open');
     headerLogo.classList.toggle('header__navigation-logo-img--open');
     headerMenu.classList.toggle('header__navigation-list--open');
-  }
+  };
 
   menuButton.addEventListener('click', onMenuToggle);
 
- })();
+})();
