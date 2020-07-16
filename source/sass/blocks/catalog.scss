@@ -87,7 +87,8 @@
   left: 25px;
 }
 
-.catalog__item:hover, .catalog__item:focus {
+.catalog__item:hover,
+.catalog__item:focus {
   justify-content: flex-start;
   background-color: #011c40;
   transition: 0.5s;
