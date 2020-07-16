@@ -36,6 +36,7 @@
   background: #011c40;
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   margin-right: 45px;
+  margin-left: 45px;
   flex-shrink: 0;
 }
 
@@ -72,6 +73,7 @@
   width: 100%;
   font-size: 14px;
   color: #011c40;
+  border-radius: 0;
 
   &::placeholder {
     font-size: 14px;
@@ -86,6 +88,7 @@
   padding: 6px 4px;
   margin-right: 8px;
   opacity: 0;
+  border-radius: 0;
 }
 
 .feedback__form-checkbox-label {
@@ -172,6 +175,7 @@
 
   .feedback__form {
     margin-right: 0;
+    margin-left: 0;
   }
 }
 

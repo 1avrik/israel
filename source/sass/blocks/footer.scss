@@ -18,6 +18,7 @@
 .footer__navigation-list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__navigation-item {

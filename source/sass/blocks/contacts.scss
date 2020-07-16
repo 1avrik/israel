@@ -46,14 +46,20 @@
     }
   }
 
-  &--phone::before {
-    content: "";
-    margin-right: 10px;
-    width: 24px;
-    height: 18px;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 0 50%;
+  &--phone {
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: "";
+      margin-right: 10px;
+      width: 24px;
+      height: 18px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+    }
   }
 }
 

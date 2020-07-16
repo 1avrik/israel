@@ -245,18 +245,18 @@
       <ul class="feedback__form-list">
         <li class="feedback__form-item">
           <label class="visually-hidden" for="name">Ваше имя</label>
-          <input class="feedback__form-input" id="name" type="text" name="name" placeholder="Валерия">
+          <input class="feedback__form-input" id="name" type="text" name="name" placeholder="Валерия" required="">
         </li>
         <li class="feedback__form-item">
           <label class="visually-hidden" for="phone">Номер телефона</label>
-          <input class="feedback__form-input" id="phone" type="text" name="phone" placeholder="89236889975">
+          <input class="feedback__form-input" id="phone" type="text" name="phone" placeholder="89236889975" pattern="[0-9]{11}" required="">
         </li>
         <li class="feedback__form-item">
           <label class="visually-hidden" for="email">Email</label>
-          <input class="feedback__form-input" id="email" type="email" name="email" placeholder="grishaewa.lera@gmail.com">
+          <input class="feedback__form-input" id="email" type="email" name="email" placeholder="grishaewa.lera@gmail.com" required="">
         </li>
         <li class="feedback__form-item feedback__form-item--checkbox">
-          <input class="feedback__form-checkbox" id="checkbox" type="checkbox" name="checkbox" checked="checked">
+          <input class="feedback__form-checkbox" id="checkbox" type="checkbox" name="checkbox" checked="checked" required="">
           <label class="feedback__form-checkbox-label" for="checkbox">Я согласен на обработку моих персональных данных</label>
         </li>
         <li class="feedback__form-item">

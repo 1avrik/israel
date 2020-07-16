@@ -55,6 +55,7 @@
   @include list-reset;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__navigation-item {
