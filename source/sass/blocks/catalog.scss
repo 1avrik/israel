@@ -72,17 +72,19 @@
   font-size: 14px;
   color: #d8d8d9;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .catalog__item-link {
   display: block;
-  width: 100%;
-  margin-bottom: 30px;
+  width: calc(100% - 50px);
   padding: 14px 0;
   background-color: #f9fbfd;
   text-align: center;
   color: #011c40;
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
 }
 
 .catalog__item:hover {
