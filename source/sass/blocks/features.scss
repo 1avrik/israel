@@ -44,6 +44,9 @@
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 150%;
+  color: #011c40;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .features__item-text {
@@ -51,6 +54,7 @@
   margin-bottom: 0;
   font-size: 14px;
   line-height: 140%;
+  color: #011c40;
 }
 
 @media (max-width: $max-tablet) {
@@ -62,6 +66,13 @@
   .features__item {
     padding: 25px 20px;
   }
+
+  .features__item-title {
+    &--all-inclusive {
+      display: block;
+      margin-right: 50px;
+    }
+  }
 }
 
 @media (max-width: $max-mobile) {
@@ -72,5 +83,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .features__item-title {
+    display: flex;
+    margin-right: 100px;
   }
 }

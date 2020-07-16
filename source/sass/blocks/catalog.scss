@@ -30,7 +30,7 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding: 35px 25px;
+  padding: 30px 25px;
 
   &:nth-child(4n) {
     margin-right: 0;
@@ -38,6 +38,8 @@
 }
 
 .catalog__item-title {
+  font-style: normal;
+  font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   margin: 0;
@@ -45,6 +47,7 @@
 }
 
 .catalog__item-wrapper {
+  @include list-reset;
   display: none;
 }
 
@@ -85,6 +88,7 @@
 .catalog__item:hover {
   justify-content: flex-start;
   background-color: #011c40;
+  transition: 0.5s;
 
   .catalog__item-title {
     margin-bottom: 20px;
@@ -97,6 +101,7 @@
 
   .catalog__item-img {
     display: none;
+    transition: 0.5s;
   }
 }
 

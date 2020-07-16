@@ -43,6 +43,10 @@
   margin-left: 33px;
 }
 
+.footer__social-text {
+  font-size: 0;
+}
+
 @media (max-width: $max-tablet) {
   .footer__logo-img {
     width: 38px;

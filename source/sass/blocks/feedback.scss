@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.feedback__text-title {
+.feedback__title {
   font-weight: bold;
   font-size: 40px;
   line-height: 150%;
@@ -23,7 +23,7 @@
   margin-bottom: 20px;
 }
 
-.feedback__text-intro {
+.feedback__intro {
   font-size: 18px;
   line-height: 150%;
   color: #011c40;
@@ -36,14 +36,17 @@
   background: #011c40;
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   margin-right: 45px;
+  flex-shrink: 0;
 }
 
 .feedback__form-text {
   font-size: 18px;
   line-height: 150%;
+  font-weight: 500;
   color: #f9fbfd;
   margin-top: 0;
   margin-bottom: 35px;
+  font-style: normal;
 }
 
 .feedback__form-list {
@@ -82,11 +85,40 @@
   height: 18px;
   padding: 6px 4px;
   margin-right: 8px;
+  opacity: 0;
 }
 
 .feedback__form-checkbox-label {
   font-size: 10px;
   color: #f9fbfd;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: -3px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -21px;
+    top: 2px;
+    width: 10px;
+    height: 7px;
+    background-image: url("../img/icon-checked.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+}
+
+.feedback__form-checkbox:checked + .feedback__form-checkbox-label::after {
+  opacity: 1;
 }
 
 .feedback__form-button {
@@ -97,6 +129,8 @@
   background-color: #f9fbfd;
   border: none;
   margin-top: 10px;
+  font-weight: 600;
+  line-height: 150%;
 
   &:hover {
     cursor: pointer;
@@ -110,20 +144,30 @@
     padding-bottom: 100px;
   }
 
-  .feedback__text-wrapper {
+  .feedback__text {
     margin-bottom: 60px;
   }
 
-  .feedback__text-title {
+  .feedback__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
     display: block;
     width: 100%;
     text-align: center;
+    padding: 0 45px;
   }
 
-  .feedback__text-intro {
+  .feedback__intro {
     display: block;
     width: 100%;
     text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 0 20px;
   }
 
   .feedback__form {
@@ -146,5 +190,6 @@
     display: block;
     width: 100%;
     text-align: center;
+    line-height: 140%;
   }
 }
