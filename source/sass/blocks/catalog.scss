@@ -79,7 +79,7 @@
 }
 
 .catalog__item-link {
-  display: block;
+  display: none;
   width: calc(100% - 50px);
   padding: 11px 0;
   background-color: #f9fbfd;
@@ -109,6 +109,10 @@
   .catalog__item-img {
     display: none;
     transition: 0.5s;
+  }
+
+  .catalog__item-link {
+    display: block;
   }
 }
 
