@@ -1,7 +1,7 @@
 .description {
   @include container;
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 105px;
   display: flex;
   align-items: center;
 }
@@ -9,18 +9,22 @@
 .description__text-wrapper {
   padding-right: 88px;
   flex-shrink: 1;
+  margin-top: 10px;
 }
 
 .description__text-title {
   font-size: 28px;
   line-height: 150%;
   color: #011c40;
+  margin-top: 0;
+  letter-spacing: 1.5px;
 }
 
 .description__text {
   font-size: 16px;
   line-height: 150%;
   color: #011c40;
+  letter-spacing: 1px;
 }
 
 .description__picture {
@@ -35,8 +39,8 @@
 
 @media (max-width: $max-tablet) {
   .description {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 77px;
     justify-content: space-between;
   }
 
@@ -46,6 +50,11 @@
 
   .description__text-title {
     font-size: 26px;
+    margin-bottom: 11px;
+  }
+
+  .description__text {
+    margin-top: 0;
   }
 
   .description__picture {
@@ -63,15 +72,15 @@
 @media (max-width: $max-mobile) {
   .description {
     flex-direction: column;
-    margin-top: 65px;
-    margin-bottom: 65px;
+    margin-top: 47px;
+    margin-bottom: 90px;
     justify-content: center;
   }
 
   .description__text-wrapper {
     max-width: 100%;
     padding-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 17px;
   }
 
   .description__picture {

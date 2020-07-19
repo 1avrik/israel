@@ -1,7 +1,7 @@
 .catalog {
   @include container;
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 125px;
+  padding-bottom: 90px;
 }
 
 .catalog__title {
@@ -11,7 +11,8 @@
   font-size: 28px;
   line-height: 150%;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
+  letter-spacing: 1.5px;
 }
 
 .catalog__list {
@@ -30,7 +31,7 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding: 30px 25px;
+  padding: 22px 30px;
 
   &:nth-child(4n) {
     margin-right: 0;
@@ -44,6 +45,7 @@
   line-height: 150%;
   margin: 0;
   color: white;
+  letter-spacing: 1.5px;
 }
 
 .catalog__item-wrapper {
@@ -65,6 +67,7 @@
   margin-bottom: 5px;
   display: block;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .catalog__item-text-value {
@@ -72,18 +75,18 @@
   font-size: 14px;
   color: #d8d8d9;
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
 }
 
 .catalog__item-link {
   display: block;
   width: calc(100% - 50px);
-  padding: 14px 0;
+  padding: 11px 0;
   background-color: #f9fbfd;
   text-align: center;
   color: #011c40;
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   left: 25px;
 }
 
@@ -92,9 +95,10 @@
   justify-content: flex-start;
   background-color: #011c40;
   transition: 0.5s;
+  padding: 30px 25px;
 
   .catalog__item-title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .catalog__item-wrapper {
@@ -121,9 +125,19 @@
 }
 
 @media (max-width: $max-tablet) {
+  .catalog {
+    padding-top: 92px;
+    padding-bottom: 70px;
+  }
+
+  .catalog__title {
+    letter-spacing: 1px;
+  }
+
   .catalog__item {
     width: 309px;
     height: 386px;
+    padding: 25px 35px;
 
     &:nth-child(3n) {
       margin-right: 30px;
@@ -138,9 +152,29 @@
     width: 309px;
     height: 386px;
   }
+
+  .catalog__item:hover,
+  .catalog__item:focus {
+    padding: 30px 35px;
+  }
+
+  .catalog__item-link {
+    width: calc(100% - 70px);
+    left: 35px;
+  }
 }
 
 @media (max-width: $max-mobile) {
+  .catalog {
+    padding-top: 55px;
+    padding-bottom: 36px;
+  }
+
+  .catalog__title {
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+  }
+
   .catalog__list {
     flex-direction: column;
     align-items: center;
@@ -150,10 +184,21 @@
     width: 270px;
     height: 386px;
     margin-right: 0;
+    padding: 15px 25px;
 
     &:nth-child(3n) {
       margin-right: 0;
     }
+  }
+
+  .catalog__item:hover,
+  .catalog__item:focus {
+    padding: 30px 26px;
+  }
+
+  .catalog__item-link {
+    width: calc(100% - 52px);
+    left: 26px;
   }
 
   .catalog__item-img {
