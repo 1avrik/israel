@@ -23,11 +23,11 @@
 
 .footer__navigation-item {
   margin-right: 33px;
-  letter-spacing: 1.5px;
 }
 
 .footer__navigation-link {
   color: white;
+  font-weight: 500;
 
   &:hover {
     text-decoration: underline;
@@ -74,7 +74,7 @@
 
 @media (max-width: $max-tablet) {
   .footer__wrapper {
-    padding: 48px 45px;
+    padding: 47px 45px 48px;
   }
 
   .footer__logo-img {
@@ -84,12 +84,11 @@
   }
 
   .footer__navigation-item {
-    margin-right: 19px;
+    margin-right: 23px;
   }
 
   .footer__navigation-link {
     font-size: 12px;
-    letter-spacing: 1;
   }
 
   .footer__social-list {

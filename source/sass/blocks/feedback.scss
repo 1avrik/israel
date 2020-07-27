@@ -16,16 +16,15 @@
 
 .feedback__text {
   margin-left: 60px;
+  margin-bottom: 7px;
 }
 
 .feedback__title {
-  font-weight: bold;
   font-size: 40px;
   line-height: 150%;
   color: #011c40;
   margin: 0;
-  margin-bottom: 10px;
-  letter-spacing: 2.5px;
+  margin-bottom: 8px;
 }
 
 .feedback__intro {
@@ -33,7 +32,6 @@
   line-height: 150%;
   color: #011c40;
   margin: 0;
-  letter-spacing: 1px;
   margin-right: 240px;
 }
 
@@ -50,12 +48,10 @@
 .feedback__form-text {
   font-size: 18px;
   line-height: 150%;
-  font-weight: 500;
   color: #f9fbfd;
   margin-top: 0;
   margin-bottom: 24px;
-  font-style: normal;
-  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .feedback__form-list {
@@ -64,7 +60,7 @@
 
 .feedback__form-item {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   &:last-child {
     margin-bottom: 0;
@@ -101,6 +97,7 @@
 
 .feedback__form-checkbox-label {
   font-size: 10px;
+  font-weight: normal;
   color: #f9fbfd;
   position: relative;
 
@@ -139,10 +136,8 @@
   padding: 13px 0 11px 0;
   background-color: #f9fbfd;
   border: none;
-  margin-top: 17px;
-  font-weight: 600;
+  margin-top: 8px;
   line-height: 150%;
-  letter-spacing: 1px;
 
   &:hover {
     cursor: pointer;
@@ -159,13 +154,12 @@
   .feedback__text {
     width: 525px;
     margin-left: 0;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .feedback__title {
     text-align: center;
     font-style: normal;
-    font-weight: bold;
     line-height: 130%;
     display: block;
     width: 100%;
@@ -176,8 +170,6 @@
   .feedback__intro {
     display: block;
     text-align: center;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 150%;
     padding: 0 20px;
@@ -189,17 +181,25 @@
     margin-left: 0;
     padding: 45px 48px 50px;
   }
+
+  .feedback__form-input {
+    padding: 14px 0 13px 15px;
+  }
+
+  .feedback__form-button {
+    margin-top: 14px;
+  }
 }
 
 @media (max-width: $max-mobile) {
   .feedback__wrapper {
-    padding-top: 62px;
+    padding-top: 60px;
     padding-bottom: 68px;
   }
 
   .feedback__text {
     width: 100%;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
   }
 
   .feedback__title {
@@ -238,19 +238,19 @@
 
   .feedback__form-checkbox-label {
     &::before {
-      left: -28px;
+      left: -26px;
       top: 1px;
       width: 19px;
       height: 19px;
     }
 
     &::after {
-      left: -23px;
+      left: -22px;
       top: 7px;
     }
   }
 
   .feedback__form-button {
-    margin-top: 11px;
+    margin-top: 12px;
   }
 }

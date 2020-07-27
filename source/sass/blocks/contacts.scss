@@ -14,8 +14,8 @@
 
 .contacts__text-wrapper {
   margin-left: 100px;
-  width: 480px;
-  margin-bottom: 5px;
+  width: 490px;
+  margin-bottom: 4px;
 }
 
 .contacts__text-title {
@@ -25,7 +25,7 @@
   margin-bottom: 35px;
   display: block;
   color: #011c40;
-  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .contacts__text-intro {
@@ -36,7 +36,6 @@
 
   &--address {
     margin-bottom: 25px;
-    letter-spacing: 1px;
 
     &::before {
       content: "";
@@ -82,7 +81,7 @@
   .contacts {
     justify-content: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 102px;
   }
 
   .contacts__map {
@@ -93,14 +92,19 @@
   .contacts__text-wrapper {
     width: 324px;
     margin-left: 30px;
-    margin-bottom: 10px;
+  }
+
+  .contacts__text-intro {
+    &--address {
+      margin-bottom: 30px;
+    }
   }
 }
 
 @media (max-width: $max-mobile) {
   .contacts {
     flex-direction: column-reverse;
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 62px;
   }
 
@@ -122,6 +126,7 @@
   .contacts__text-intro {
     &--address {
       line-height: 145%;
+      margin-bottom: 27px;
 
       &::before {
         width: 28px;
