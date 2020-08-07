@@ -1,7 +1,7 @@
 {
-  "name": "Cruises-to-antarctica",
+  "name": "bicycles",
   "version": "1.0.0",
-  "description": "Круизы в Антарктику",
+  "description": "Велосипеды",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
