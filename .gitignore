@@ -10,5 +10,6 @@ package-lock.json
 node_modules/
 npm-debug.*
 source/css/*.map
+source/sass/REMINDER.SCSS
 Thumbs.db
 temp/*

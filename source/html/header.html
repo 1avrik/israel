@@ -1,1 +1,45 @@
-<h1>header</h1>
+<header class="header">
+  <div class="header__wrapper">
+    <nav class="header__navigation">
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">О нас</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">Виды велосипедов</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">Видео про велосипеды</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__content">
+      <a  class="header__content-logo" href="/">
+        <svg class="header__content-logo-img" width="67" height="20">
+          <use xlink:href="img/sprite_auto.svg#icon__logo"></use>
+        </svg>
+      </a>
+      <h1 class="header__content-title">Мы продаем велосипеды</h1>
+      <p class="header__content-intro">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+    </div>
+    <form class="header__form">
+      <p class="header__form-text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <ul class="header__form-list">
+        <li class="header__form-item">
+          <label class="visually-hidden" for="name">Ваше имя</label>
+          <input class="header__form-input" id="name" type="text" name="name" placeholder="Введите Ваше Имя" required="">
+        </li>
+        <li class="header__form-item">
+          <label class="visually-hidden" for="phone">Ваше имя</label>
+          <input class="header__form-input" id="phone" type="text" name="phone" placeholder="Введите Ваш номер телефона" required="">
+        </li>
+        <li class="header__form-item">
+          <button class="header__form-button" type="submit">Подобрать велосипед мечты</button>
+        </li>
+      </ul>
+    </form>
+  </div>
+</header>
