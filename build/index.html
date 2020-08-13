@@ -26,6 +26,7 @@
           <a class="header__navigation-link" href="#">Контакты</a>
         </li>
       </ul>
+      <button class="header__navigation-button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
     </nav>
     <div class="header__content">
       <a class="header__content-logo" href="/">
@@ -56,9 +57,66 @@
 </header>
 
   <main>
-    <h2>facts</h2>
+    <section class="facts">
+  <h2 class="facts__title">Несколько фактов о нас</h2>
+  <ul class="facts__list">
+    <li class="facts__item">
+      <h3 class="facts__number">01</h3>
+      <p class="facts__value">Самый широкий выбор велосипедов!</p>
+    </li>
+    <li class="facts__item facts__item--mb56">
+      <h3 class="facts__number">02</h3>
+      <p class="facts__value facts__value--mt10">Доставка велосипедов по всей России!</p>
+    </li>
+    <li class="facts__item facts__item--mb56">
+      <h3 class="facts__number">03</h3>
+      <p class="facts__value facts__value--mt10">Большой выбор крутых аксессуаров!</p>
+    </li>
+    <li class="facts__item facts__item--mb56">
+      <h3 class="facts__number">04</h3>
+      <p class="facts__value facts__value--mt10">Профессиональные консультации!</p>
+    </li>
+  </ul>
+</section>
 
-    <h2>type</h2>
+
+
+    <section class="type">
+  <div class="type__wrapper">
+    <h2 class="type__title">Виды велосипедов</h2>
+    <ul class="type__list">
+      <li class="type__item type__item--01">
+        <picture>
+          <!-- 1x 270px -->
+          <source media="(max-width: 768px)" type="image/webp" srcset="img/type1-tablet.webp">
+          <!-- 1x 342px -->
+          <source type="image/webp" srcset="img/type1.webp">
+          <img class="type__item-img" width="342" height="503" alt="Дорожный велосипед" src="img/type1.png">
+        </picture>
+        <h3 class="type__item-name">Дорожный велосипед</h3>
+      </li>
+      <li class="type__item type__item--02">
+        <picture>
+          <!-- 1x 270px -->
+          <source media="(max-width: 768px)" type="image/webp" srcset="img/type2-tablet.webp">
+          <!-- 1x 342px -->
+          <source type="image/webp" srcset="img/type2.webp">
+          <img class="type__item-img" width="342" height="566" alt="Горный велосипед" src="img/type2.png">
+        </picture>
+        <h3 class="type__item-name">Горный велосипед</h3>
+      </li>
+      <li class="type__item type__item--03">
+        <picture>
+          <!-- 1x 270px -->
+          <source media="(max-width: 768px)" type="image/webp" srcset="img/type3-tablet.webp">
+          <!-- 1x 342px -->
+          <source type="image/webp" srcset="img/type3.webp">
+          <img class="type__item-img" width="342" height="512" alt="Детский велосипед" src="img/type3.png">
+        </picture>
+        <h3 class="type__item-name">Детский велосипед</h3>
+    </li></ul>
+  </div>
+</section>
 
     <h2>video</h2>
 
