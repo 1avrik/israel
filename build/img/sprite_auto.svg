@@ -1,4 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon__cross" viewBox="0 0 24 25">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<clipPath id="clip0">
+<rect width="12" height="7.4" fill="white" transform="translate(9 18) rotate(-90)"/>
+</clipPath>
+</defs><symbol id="icon__arrow" viewBox="0 0 25 25">
+<g clip-path="url(#clip0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 7.4L13.6 12L9 16.6L10.4 18L16.4 12L10.4 6L9 7.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
+</g>
+
+</symbol><symbol id="icon__cross" viewBox="0 0 24 25">
 <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol id="icon__ellips1" viewBox="0 0 180 180">
 <circle cx="90" cy="90" r="76.5" stroke="#0AD9C6" stroke-width="27"/>

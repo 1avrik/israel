@@ -11,7 +11,8 @@
 <body class="body">
   <header class="header">
   <div class="header__wrapper">
-    <nav class="header__navigation">
+    <nav class="header__navigation header__navigation--nojs">
+    <!-- <nav class="header__navigation"> -->
       <ul class="header__navigation-list">
         <li class="header__navigation-item">
           <a class="header__navigation-link" href="#">О нас</a>
@@ -118,10 +119,35 @@
   </div>
 </section>
 
-    <h2>video</h2>
+    <section class="video">
+  <div class="video__wrapper">
+    <h2>Видео про велосипеды</h2>
+    <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+    <div class="video__player">
+      <picture>
+        <!-- 1x 929px -->
+        <source type="image/webp" srcset="img/video__poster.webp">
+        <img class="video__img" width="929" height="522" alt="Видео про велосипеды" src="img/video__poster.png">
+      </picture>
+      <button class="video__button"><span class="visually-hidden">Запустить / остановить видео</span></button>
+    </div>
+  </div>
+</section>
 
   </main>
-  <h2>footer</h2>
+  <footer class="footer">
+  <h2>Как нас найти?</h2>
+  <p>Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая Конюшенная, д. 19</p>
+  <iframe class="footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad88628d66edde8d483d6ed4c927e5f9de2aae402a81045bbfe89a0dd6ac6a6db&amp;source=constructor" width="957" height="530" frameborder="0"></iframe>
+  <ul class="footer__contacts-list">
+    <li class="footer__contacts-item">
+      <a class="footer__contacts-link footer__contacts-link--mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+    </li>
+    <li class="footer__contacts-item">
+      <a class="footer__contacts-link footer__contacts-link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    </li>
+  </ul>
+</footer>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

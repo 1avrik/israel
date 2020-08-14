@@ -1,0 +1,146 @@
+.video {
+  width: 100%;
+  background-color: #131314;
+  height: 706px;
+  margin-bottom: 97px;
+}
+
+.video__wrapper {
+  width: 929px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__wrapper h2 {
+  margin-top: 120px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video__wrapper p {
+  width: 340px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  opacity: 0.7;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.video__player {
+  bottom: -55px;
+  width: 929px;
+  height: 522px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.video__button {
+  position: relative;
+  z-index: 2;
+  border: none;
+  background-color: transparent;
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/icon__play-video.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $max-tablet) {
+  .video {
+    height: 413px;
+    margin-bottom: 85px;
+  }
+
+  .video__wrapper {
+    width: 100%;
+    padding-left: 133px;
+    padding-right: 133px;
+  }
+
+  .video__wrapper h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 70px;
+  }
+
+  .video__wrapper p {
+    width: 429px;
+  }
+
+  .video__player {
+    width: 503px;
+    height: 282px;
+    bottom: -40px;
+  }
+
+  .video__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .video__button {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .video {
+    height: 384px;
+    margin-bottom: 54px;
+  }
+
+  .video__wrapper {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .video__wrapper h2 {
+    font-size: 24px;
+    margin-top: 84px;
+    position: relative;
+    right: 5px;
+  }
+
+  .video__wrapper p {
+    width: 288px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .video__player {
+    width: 288px;
+    height: 161px;
+    bottom: -54px;
+  }
+
+  .video__button {
+    width: 65px;
+    height: 65px;
+  }
+}

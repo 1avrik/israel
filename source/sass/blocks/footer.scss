@@ -1,0 +1,165 @@
+.footer {
+  width: 957px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  padding-bottom: 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  color: #1f1f1f;
+  position: relative;
+  right: 5px;
+}
+
+.footer p {
+  width: 555px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 17px;
+  line-height: 31px;
+}
+
+.footer__iframe {
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+
+.footer__contacts-list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__contacts-item {
+  &:first-child {
+    margin-right: 90px;
+  }
+
+  &:last-child {
+    margin-right: 20px;
+  }
+}
+
+.footer__contacts-link {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &::before {
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+  }
+
+  &--mail {
+    &::before {
+      width: 26px;
+      height: 20px;
+      background-image: url("../img/icon__mail.svg");
+    }
+  }
+
+  &--phone {
+    &::before {
+      width: 21px;
+      height: 22px;
+      background-image: url("../img/icon__phone.svg");
+    }
+  }
+}
+
+@media (max-width: $max-tablet) {
+  .footer {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 70px;
+    padding-bottom: 52px;
+  }
+
+  .footer h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    right: 0;
+  }
+
+  .footer p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    width: 629px;
+  }
+
+  .footer__iframe {
+    width: 698px;
+    height: 545px;
+    margin-bottom: 22px;
+  }
+
+  .footer__contacts-item {
+    &:last-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 68px;
+    padding-bottom: 35px;
+  }
+
+  .footer h2 {
+    font-size: 18px;
+  }
+
+  .footer p {
+    width: 288px;
+    font-size: 17px;
+    line-height: 31px;
+    margin-top: 20px;
+  }
+
+  .footer__iframe {
+    width: 320px;
+    height: 250px;
+    margin-bottom: 35px;
+  }
+
+  .footer__contacts-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__contacts-item {
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 22px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      position: relative;
+      right: 9px;
+    }
+  }
+
+  .footer__contacts-link {
+    font-size: 15px;
+  }
+}

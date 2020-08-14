@@ -90,6 +90,7 @@
   .facts {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 27px;
   }
 
   .facts__title {
@@ -111,8 +112,8 @@
     line-height: 34px;
     margin-bottom: 0;
 
-     &--mt10 {
+    &--mt10 {
       margin-top: 10px;
-     }
+    }
   }
 }
