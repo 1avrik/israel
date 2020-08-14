@@ -12,7 +12,6 @@
   <header class="header">
   <div class="header__wrapper">
     <nav class="header__navigation header__navigation--nojs">
-    <!-- <nav class="header__navigation"> -->
       <ul class="header__navigation-list">
         <li class="header__navigation-item">
           <a class="header__navigation-link" href="#">О нас</a>
@@ -35,11 +34,21 @@
           <use xlink:href="img/sprite_auto.svg#icon__logo"></use>
         </svg>
       </a>
-      <h1 class="header__content-title">Мы продаем велосипеды</h1>
-      <p class="header__content-intro">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      <h1>Мы продаем велосипеды</h1>
+      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
     </div>
+
     <form class="header__form">
-      <p class="header__form-text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <label class="visually-hidden" for="name">Ваше имя</label>
+      <input id="name" type="text" name="name" placeholder="Введите Ваше Имя" required="">
+      <label class="visually-hidden" for="phone">Ваше имя</label>
+      <input id="phone" type="text" name="phone" placeholder="Введите Ваш номер телефона" required="">
+      <button type="submit">Подобрать велосипед мечты</button>
+    </form>
+
+<!--     <form class="header__form">
+      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
       <ul class="header__form-list">
         <li class="header__form-item">
           <label class="visually-hidden" for="name">Ваше имя</label>
@@ -53,29 +62,30 @@
           <button class="header__form-button" type="submit">Подобрать велосипед мечты</button>
         </li>
       </ul>
-    </form>
+    </form> -->
+
   </div>
 </header>
 
   <main>
     <section class="facts">
-  <h2 class="facts__title">Несколько фактов о нас</h2>
+  <h2>Несколько фактов о нас</h2>
   <ul class="facts__list">
     <li class="facts__item">
       <h3 class="facts__number">01</h3>
-      <p class="facts__value">Самый широкий выбор велосипедов!</p>
+      <p>Самый широкий выбор велосипедов!</p>
     </li>
     <li class="facts__item facts__item--mb56">
       <h3 class="facts__number">02</h3>
-      <p class="facts__value facts__value--mt10">Доставка велосипедов по всей России!</p>
+      <p>Доставка велосипедов по всей России!</p>
     </li>
     <li class="facts__item facts__item--mb56">
       <h3 class="facts__number">03</h3>
-      <p class="facts__value facts__value--mt10">Большой выбор крутых аксессуаров!</p>
+      <p>Большой выбор крутых аксессуаров!</p>
     </li>
     <li class="facts__item facts__item--mb56">
       <h3 class="facts__number">04</h3>
-      <p class="facts__value facts__value--mt10">Профессиональные консультации!</p>
+      <p>Профессиональные консультации!</p>
     </li>
   </ul>
 </section>
@@ -84,7 +94,7 @@
 
     <section class="type">
   <div class="type__wrapper">
-    <h2 class="type__title">Виды велосипедов</h2>
+    <h2>Виды велосипедов</h2>
     <ul class="type__list">
       <li class="type__item type__item--01">
         <picture>
@@ -94,7 +104,7 @@
           <source type="image/webp" srcset="img/type1.webp">
           <img class="type__item-img" width="342" height="503" alt="Дорожный велосипед" src="img/type1.png">
         </picture>
-        <h3 class="type__item-name">Дорожный велосипед</h3>
+        <h3>Дорожный велосипед</h3>
       </li>
       <li class="type__item type__item--02">
         <picture>
@@ -104,7 +114,7 @@
           <source type="image/webp" srcset="img/type2.webp">
           <img class="type__item-img" width="342" height="566" alt="Горный велосипед" src="img/type2.png">
         </picture>
-        <h3 class="type__item-name">Горный велосипед</h3>
+        <h3>Горный велосипед</h3>
       </li>
       <li class="type__item type__item--03">
         <picture>
@@ -114,7 +124,7 @@
           <source type="image/webp" srcset="img/type3.webp">
           <img class="type__item-img" width="342" height="512" alt="Детский велосипед" src="img/type3.png">
         </picture>
-        <h3 class="type__item-name">Детский велосипед</h3>
+        <h3>Детский велосипед</h3>
     </li></ul>
   </div>
 </section>

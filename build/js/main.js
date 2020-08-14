@@ -6,8 +6,6 @@
   var menuButton = headerNavigation.querySelector('.header__navigation-button');
   var headerMenu = headerNavigation.querySelector('.header__navigation-list');
 
-  console.log(menuButton);
-
   headerNavigation.classList.remove('header__navigation--nojs');
 
   var onMenuToggle = function () {

@@ -62,7 +62,7 @@
   color: white;
 }
 
-.header__content-title {
+.header__content h1 {
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
@@ -70,7 +70,7 @@
   margin-bottom: 26px;
 }
 
-.header__content-intro {
+.header__content p {
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
@@ -84,7 +84,7 @@
   margin-left: auto;
 }
 
-.header__form-text {
+.header__form p {
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
@@ -95,11 +95,7 @@
   margin-top: 3px;
 }
 
-.header__form-list {
-  @include list-reset;
-}
-
-.header__form-input {
+.header__form input {
   display: block;
   width: 100%;
   background: white;
@@ -113,7 +109,7 @@
   }
 }
 
-.header__form-button {
+.header__form button {
   background-color: $green;
   border-radius: 6px;
   border: none;
@@ -205,12 +201,12 @@
     margin-bottom: 49px;
   }
 
-  .header__content-title {
+  .header__content h1 {
     font-size: 30px;
     margin-bottom: 8px;
   }
 
-  .header__content-intro {
+  .header__content p {
     font-size: 18px;
     line-height: 32px;
     padding-bottom: 60px;
@@ -225,7 +221,7 @@
     margin-top: 70px;
   }
 
-  .header__form-text {
+  .header__form p {
     color: black;
     font-size: 18px;
     margin-top: 0;
@@ -260,13 +256,13 @@
 }
 
 @media (max-width: $max-mobile) {
-  .header__content-title {
+  .header__content h1 {
     font-size: 30px;
     line-height: 42px;
     text-align: center;
   }
 
-  .header__content-intro {
+  .header__content p {
     width: 288px;
     font-size: 18px;
     line-height: 32px;
@@ -282,7 +278,7 @@
     padding-right: 16px;
   }
 
-  .header__form-text {
+  .header__form p {
     margin-bottom: 20px;
   }
 

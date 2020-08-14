@@ -6,7 +6,7 @@
   padding-bottom: 130px;
 }
 
-.facts__title {
+.facts h2 {
   display: block;
   width: 100%;
   text-align: center;
@@ -44,7 +44,7 @@
   margin-bottom: 0;
 }
 
-.facts__value {
+.facts__item p {
   margin-top: 15px;
   text-align: center;
   font-size: 22px;
@@ -70,7 +70,7 @@
     padding-bottom: 30px;
   }
 
-  .facts__title {
+  .facts h2 {
     font-size: 24px;
     line-height: 41px;
     left: 1px;
@@ -81,7 +81,7 @@
     width: 47%;
   }
 
-  .facts__value {
+  .facts__item p {
     margin-bottom: 42px;
   }
 }
@@ -93,7 +93,7 @@
     padding-bottom: 27px;
   }
 
-  .facts__title {
+  .facts h2 {
     left: 0;
     font-size: 23px;
   }
@@ -107,7 +107,7 @@
     }
   }
 
-  .facts__value {
+  .facts__item p {
     font-size: 18px;
     line-height: 34px;
     margin-bottom: 0;

@@ -9,7 +9,7 @@
   padding: 150px 0 133px;
 }
 
-.type__title {
+.type__wrapper h2 {
   display: block;
   width: 100%;
   text-align: center;
@@ -103,7 +103,7 @@
   z-index: 2;
 }
 
-.type__item-name {
+.type__item h3 {
   position: relative;
   z-index: 2;
   font-weight: 600;
@@ -126,7 +126,7 @@
     padding-bottom: 53px;
   }
 
-  .type__title {
+  .type__wrapper h2 {
     font-size: 24px;
     margin-bottom: 37px;
   }
