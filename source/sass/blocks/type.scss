@@ -6,7 +6,7 @@
   width: 1150px;
   margin-left: auto;
   margin-right: auto;
-  padding: 150px 0 133px;
+  padding: 144px 0 133px;
 }
 
 .type__wrapper h2 {
@@ -34,7 +34,7 @@
   align-items: center;
   position: relative;
 
-  &--01 {
+  &--road {
     margin-top: 10px;
     margin-left: 25px;
 
@@ -44,15 +44,16 @@
       height: 180px;
       position: absolute;
       z-index: 1;
-      left: -60px;
-      top: 156px;
-      background-image: url("../img/icon__ellips1.svg");
-      background-size: 180 180;
-      background-repeat: no-repeat;
+      left: -62px;
+      top: 155px;
+      border-radius: 50%;
+      border-color: $green;
+      border-style: solid;
+      border-width: 28px;
     }
   }
 
-  &--02 {
+  &--mountain {
     margin-top: 39px;
 
     &::before {
@@ -63,9 +64,9 @@
       z-index: 3;
       left: -19px;
       top: -18px;
-      background-image: url("../img/icon__rectangle.svg");
-      background-size: 47 47;
-      background-repeat: no-repeat;
+      border-color: $green;
+      border-style: solid;
+      border-width: 12px;
     }
 
     &::after {
@@ -76,13 +77,13 @@
       z-index: 3;
       right: -22px;
       bottom: 48px;
-      background-image: url("../img/icon__rectangle.svg");
-      background-size: 47 47;
-      background-repeat: no-repeat;
+      border-color: $green;
+      border-style: solid;
+      border-width: 12px;
     }
   }
 
-  &--03 {
+  &--childlike {
     &::before {
       content: "";
       width: 95px;
@@ -91,9 +92,10 @@
       z-index: 3;
       top: -32px;
       right: -36px;
-      background-image: url("../img/icon__ellips2.svg");
-      background-size: 95 95;
-      background-repeat: no-repeat;
+      border-radius: 50%;
+      border-color: $green;
+      border-style: solid;
+      border-width: 20px;
     }
   }
 }
@@ -101,6 +103,7 @@
 .type__item img {
   position: relative;
   z-index: 2;
+  margin-bottom: 15px;
 }
 
 .type__item h3 {
@@ -108,6 +111,7 @@
   z-index: 2;
   font-weight: 600;
   font-size: 22px;
+  margin-top: 0;
 }
 
 @media (max-width: 1150px) {
@@ -139,7 +143,7 @@
   .type__item {
     width: 270px;
 
-    &--01 {
+    &--road {
       margin-top: 0;
       margin-left: 65px;
 
@@ -153,7 +157,7 @@
       }
     }
 
-    &--02 {
+    &--mountain {
       margin-top: 0;
       margin-right: 65px;
 
@@ -166,7 +170,7 @@
       }
     }
 
-    &--03 {
+    &--childlike {
       margin-top: 33px;
 
       &::before {
@@ -191,7 +195,7 @@
   }
 
   .type__item {
-    &--01 {
+    &--road {
       margin-left: 0;
 
       &::before {
@@ -199,12 +203,12 @@
       }
     }
 
-    &--02 {
+    &--mountain {
       margin-right: 0;
       margin-top: 25px;
     }
 
-    &--03 {
+    &--childlike {
       margin-top: 23px;
 
       &::before {
