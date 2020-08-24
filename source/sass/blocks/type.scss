@@ -127,7 +127,7 @@
 @media (max-width: $max-tablet) {
   .type__wrapper {
     padding-top: 55px;
-    padding-bottom: 53px;
+    padding-bottom: 48px;
   }
 
   .type__wrapper h2 {
@@ -150,10 +150,10 @@
       &::before {
         width: 127px;
         height: 127px;
-        background-size: cover;
         top: auto;
-        bottom: 43px;
-        left: -37px;
+        bottom: 47px;
+        left: -38px;
+        border-width: 18px;
       }
     }
 
@@ -177,8 +177,9 @@
         width: 68px;
         height: 68px;
         background-size: cover;
-        top: -20px;
+        top: -24px;
         right: -25px;
+        border-width: 12px;
       }
     }
   }
@@ -191,7 +192,8 @@
 
 @media (max-width: $max-mobile) {
   .type__wrapper {
-    padding-bottom: 37px;
+    padding-bottom: 34px;
+    padding-top: 49px;
   }
 
   .type__item {
