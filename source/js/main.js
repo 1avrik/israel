@@ -16,3 +16,22 @@
   menuButton.addEventListener('click', onMenuToggle);
 
 })();
+
+(function () {
+
+var ValidPhone = function () {
+    var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+    var myPhone = document.getElementById('phone').value;
+    var message = document.getElementById('message');
+    var valid = re.test(myPhone);
+    if (!valid) {
+      message.textContent = 'Номер телефона введен неправильно!';
+      message.style = "color: red;"
+    } else {
+      message.style = "";
+    }
+
+    return valid;
+}
+
+})();

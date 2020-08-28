@@ -39,6 +39,7 @@
   @include list-reset;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer__contacts-item {
