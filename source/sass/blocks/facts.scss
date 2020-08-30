@@ -52,13 +52,17 @@
   color: black;
 }
 
-@media (max-width: 1166px) {
+@media (max-width: 1180px) {
   .facts {
     width: 100%;
   }
 
   .facts__item {
     width: 23%;
+  }
+
+  .facts h2 {
+    position: static;
   }
 }
 

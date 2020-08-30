@@ -119,6 +119,20 @@
   .type__wrapper {
     width: 100%;
   }
+
+  .type__item {
+    &--road {
+      margin-left: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: $max-tablet) {
@@ -158,6 +172,7 @@
     &--mountain {
       margin-top: 0;
       margin-right: 65px;
+      margin-left: 90px;
 
       &::before {
         display: none;
@@ -186,6 +201,14 @@
   .type__item img {
     width: 270px;
     height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .type__item {
+    &--mountain {
+      margin-left: 0;
+    }
   }
 }
 
