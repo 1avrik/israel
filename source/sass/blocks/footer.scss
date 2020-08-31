@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 74px;
-  padding-bottom: 98px;
+  padding-bottom: 78px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,20 +36,15 @@
 }
 
 .footer__contacts-list {
+  width: 535px;
   @include list-reset;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .footer__contacts-item {
-  &:first-child {
-    margin-right: 90px;
-  }
-
-  &:last-child {
-    margin-right: 20px;
-  }
+  margin-bottom: 20px;
 }
 
 .footer__contacts-link {
@@ -92,12 +87,6 @@
     height: 545px;
     margin-bottom: 22px;
   }
-
-  .footer__contacts-item {
-    &:last-child {
-      margin-right: 10px;
-    }
-  }
 }
 
 @media (max-width: $max-mobile) {
@@ -127,6 +116,7 @@
   }
 
   .footer__contacts-list {
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }

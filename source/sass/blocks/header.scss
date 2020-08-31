@@ -32,14 +32,9 @@
   flex-wrap: wrap;
 }
 
-.header__navigation-item {
-  &:first-child {
-    margin-left: 20px;
-  }
-
-  &:last-child {
-    margin-right: 25px;
-  }
+.header__navigation-list a {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header__navigation-link {
