@@ -1,19 +1,8 @@
 @font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans-Light"),
-    url("../fonts/OpenSans-Light.woff2") format("woff2"),
-    url("../fonts/OpenSans-Light.woff") format("woff");
-
-  font-style: normal;
-  font-weight: 300;
-  font-display: fallback;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans-Regular"),
-    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
-    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-family: "FiraSans";
+  src: local("FiraSans-Regular"),
+    url("../fonts/FiraSans-Regular.woff2") format("woff2"),
+    url("../fonts/FiraSans-Regular.woff") format("woff");
 
   font-style: normal;
   font-weight: 400;
@@ -21,23 +10,56 @@
 }
 
 @font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans-SemiBold"),
-    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
-    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-family: "FiraSans";
+  src: local("FiraSans-Medium"),
+    url("../fonts/FiraSans-Medium.woff2") format("woff2"),
+    url("../fonts/FiraSans-Medium.woff") format("woff");
 
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-display: fallback;
 }
 
 @font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans-Bold"),
-    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
-    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-family: "FiraSans";
+  src: local("FiraSans-Bold"),
+    url("../fonts/FiraSans-Bold.woff2") format("woff2"),
+    url("../fonts/FiraSans-Bold.woff") format("woff");
 
   font-style: normal;
   font-weight: 700;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Bold"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway-ExtraBold"),
+    url("../fonts/Raleway-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Raleway-ExtraBold.woff") format("woff");
+
+  font-style: normal;
+  font-weight: 800;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway-Black"),
+    url("../fonts/Raleway-Black.woff2") format("woff2"),
+    url("../fonts/Raleway-Black.woff") format("woff");
+
+  font-style: normal;
+  font-weight: 900;
   font-display: fallback;
 }
