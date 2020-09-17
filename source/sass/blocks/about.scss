@@ -16,14 +16,10 @@
 }
 
 .about__wrapper h2 {
+  @include h2;
   display: block;
   width: 100%;
   text-align: center;
-  font-family: Montserrat;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 40px;
-  color: $blue;
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -80,15 +76,15 @@
 }
 
 .about__video-button:hover {
-  cursor: pointer;
+  @include pointer;
 
   &::before {
     @include shadow-icon;
   }
+}
 
-  & svg {
-    color: #63d3fd;
-  }
+.about__video-button:hover svg {
+  color: #63d3fd;
 }
 
 .about__video-button:active svg {

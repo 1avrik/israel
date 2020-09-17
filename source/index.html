@@ -27,9 +27,6 @@
           <a class="header__navigation-tel" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
           <a class="header__navigation-logo">
             <img src="img/logo.png" width="137" height="48">
-            <!-- <svg class="header__content-logo-img" width="137" height="48">
-              <use xlink:href="img/sprite_auto.svg#icon__logo"></use>
-            </svg> -->
           </a>
           <a class="header__navigation-callback" href="callback">Заказать звонок</a>
         </nav>
@@ -64,49 +61,34 @@
         <h2>Программы</h2>
         <ul class="programs__navigation-list">
           <li class="programs__navigation-item">
-            <a href="#">
-              <svg width="28" height="33">
-                <use xlink:href="img/sprite_auto.svg#icon__culture"></use>
-              </svg>
+            <a class="programs__navigation-link programs__navigation-link--general" href="#">
               <span>Общие</span>
             </a>
           </li>
           <li class="programs__navigation-item programs__navigation-item--active">
-            <a href="#">
-              <svg width="28" height="33">
-                <use xlink:href="img/sprite_auto.svg#icon__culture"></use>
-              </svg>
+            <a class="programs__navigation-link programs__navigation-link--academic" href="#">
               <span>Академические</span>
             </a>
           </li>
           <li class="programs__navigation-item">
-            <a href="#">
-              <svg width="28" height="33">
-                <use xlink:href="img/sprite_auto.svg#icon__culture"></use>
-              </svg>
+            <a class="programs__navigation-link programs__navigation-link--internships" href="#">
               <span>Стажировки</span>
             </a>
           </li>
           <li class="programs__navigation-item">
-            <a href="#">
-              <svg width="28" height="33">
-                <use xlink:href="img/sprite_auto.svg#icon__culture"></use>
-              </svg>
+            <a class="programs__navigation-link programs__navigation-link--volunteerism" href="#">
               <span>Волонтёрство</span>
             </a>
           </li>
           <li class="programs__navigation-item">
-            <a href="#">
-              <svg width="28" height="33">
-                <use xlink:href="img/sprite_auto.svg#icon__culture"></use>
-              </svg>
+            <a class="programs__navigation-link programs__navigation-link--religious" href="#">
               <span>Религиозные</span>
             </a>
           </li>
         </ul>
         <ul class="programs__content-list">
           <li class="programs__content-item">
-            <h3>Академические</h3>
+            <h3>Общие</h3>
             <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это  также академический центр, живая лаборатория идей и творческого исследования.</p>
             <p>Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
           </li>
@@ -116,21 +98,33 @@
             <p>Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
           </li>
           <li class="programs__content-item">
-            <h3>Академические</h3>
+            <h3>Стажировки</h3>
             <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это  также академический центр, живая лаборатория идей и творческого исследования.</p>
             <p>Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
           </li>
           <li class="programs__content-item">
-            <h3>Академические</h3>
+            <h3>Волонтёрство</h3>
             <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это  также академический центр, живая лаборатория идей и творческого исследования.</p>
             <p>Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
           </li>
           <li class="programs__content-item">
-            <h3>Академические</h3>
+            <h3>Религиозные</h3>
             <p>Провести семестр или год за рубежом, знакомясь с различными культурами и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это  также академический центр, живая лаборатория идей и творческого исследования.</p>
             <p>Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной университетской среде.</p>
           </li>
         </ul>
+      </section>
+      <section class="callback">
+        <div class="callback__wrapper">
+          <h2>Хочу поехать!</h2>
+          <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!</p>
+          <form class="callback__form">
+            <label for="phone">
+              <spam class="visually-hidden">Телефон</spam>
+              <input type="text" name="phone" id="phone" placeholder="телефон" required>
+            </label>
+            <button type="submit">перезвоните мне</button>
+          </form>
       </section>
     </main>
     <footer>

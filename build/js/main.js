@@ -2,18 +2,26 @@
 
 (function () {
 
-  var headerNavigation = document.querySelector('.header__navigation');
-  var menuButton = headerNavigation.querySelector('.header__navigation-button');
-  var headerMenu = headerNavigation.querySelector('.header__navigation-list');
+  var programs = document.querySelector('.programs')
+  var programsNavigationItems = programs.querySelectorAll('.programs__navigation-item');
+  var programsNavigationLinks =  programs.querySelectorAll('.programs__navigation-link');
+  var programsContentItems = programs.querySelectorAll('.programs__content-item');
 
-  headerNavigation.classList.remove('header__navigation--nojs');
-
-  var onMenuToggle = function () {
-    menuButton.classList.toggle('header__navigation-button--active');
-    headerMenu.classList.toggle('header__navigation-list--open');
+  var runProgramsNavigation = function (navigationItem, navigationLink, contentItem, navigationItems, contentItems) {
+    navigationLink.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      for (var i = 0; i < programsNavigationItems.length; i++) {
+        navigationItems[i].classList.remove('programs__navigation-item--active');
+        contentItems[i].classList.remove('programs__content-item--active');
+      }
+      navigationItem.classList.add('programs__navigation-item--active');
+      contentItem.classList.add('programs__content-item--active');
+    });
   };
 
-  menuButton.addEventListener('click', onMenuToggle);
+  for (var j = 0; j < programsNavigationLinks.length; j++) {
+    runProgramsNavigation(programsNavigationItems[j], programsNavigationLinks[j], programsContentItems[j], programsNavigationItems, programsContentItems);
+  }
 
 })();
 
