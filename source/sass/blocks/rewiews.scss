@@ -1,0 +1,158 @@
+.rewiews {
+  margin-top: 0;
+  margin-bottom: 109px;
+  background-image: url('../img/rewiews__bg');
+  background-size: 535px auto;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.rewiews__wrapper {
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rewiews__wrapper h2 {
+  @include h2;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.rewiews__list {
+  @include list-reset;
+}
+
+.rewiews__item {
+  display: flex;
+}
+
+.rewiews__item img {
+  width: 364px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.rewiews__content {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rewiews__content h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: $black;
+  opacity: 0.74;
+  margin-bottom: 8px;
+}
+
+.rewiews__content p:nth-child(2) {
+  font-size: 15px;
+  line-height: 140%;
+  color: $black;
+  opacity: 0.74;
+  margin-bottom: 32px;
+
+  & span {
+    color: $blue;
+  }
+}
+
+.rewiews__content p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 170%;
+  color: $black;
+  opacity: 0.74;
+
+  &:last-child {
+    margin-bottom: 16px;
+  }
+}
+
+.rewiews__content>a {
+  font-size: 17px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: $blue;
+  margin-bottom: 56px;
+
+  &:hover {
+    text-decoration: none;
+    @include pointer;
+  }
+}
+
+.rewiews__soc-list {
+  @include list-reset;
+  display: flex;
+  margin-left: auto;
+}
+
+.rewiews__soc-item {
+  margin-left: 18px;
+}
+
+.rewiews__soc-item svg {
+  color: #dadada;
+
+  &:hover {
+    color: $blue;
+    @include pointer;
+  }
+}
+
+.rewiews__control {
+  display: flex;
+  margin-left: 404px;
+  margin-top: -40px;
+  color: $black;
+  opacity: 0.5;
+  font-size: 17px;
+}
+
+.rewiews__control span {
+  margin-right: 24px;
+}
+
+.rewiews__control-button {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  width: 10px;
+  heigth: 10px;
+  margin-right: 20px;
+  top: 5px;
+
+  &:hover {
+    @include pointer;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    border-left: 2px solid #484848;
+    border-bottom: 2px solid #484848;
+  }
+
+  &:hover:before {
+    border-color: $blue;
+  }
+
+  &--left:before {
+    transform: rotate(45deg);
+  }
+
+  &--right:before {
+    transform: rotate(225deg);
+  }
+}

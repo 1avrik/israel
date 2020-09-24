@@ -1,0 +1,45 @@
+.details {
+  margin-bottom: 50px;
+}
+
+.details__wrapper {
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details__wrapper h2 {
+  @include h2;
+  width: 100%;
+}
+
+.details__content {
+  max-width: 480px;
+  margin-right: 74px;
+}
+
+.details__map {
+  width: 550px;
+  height: 448px;
+  background-color: gray;
+  opacity: 0.1;
+}
+
+.details__form {
+  width: 100%;
+  display: flex;
+}
+
+.details__form div {
+  width: 364px;
+}
+
+.details__form label {
+  width: 250px;
+}
+
+.details__form button {
+  width: 216px;
+}
